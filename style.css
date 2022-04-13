@@ -12,6 +12,10 @@ h1:hover{
     color: purple;
 }
 
-.color{
-    background-color: orange;
+div{
+    padding: 10px 10px 10px 10px;
+    height: 25px;
+    width: 10px;
+
+    
 }
