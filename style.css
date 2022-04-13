@@ -4,6 +4,14 @@
     grid-template-rows: repeat(16, 1fr);
 }
 
-div:hover { 
-  background-color: yellow;
+h1{
+    text-align: center;
+}
+
+h1:hover{
+    color: purple;
+}
+
+.color{
+    background-color: orange;
 }
