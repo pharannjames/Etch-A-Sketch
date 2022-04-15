@@ -4,18 +4,13 @@
     grid-template-rows: repeat(16, 1fr);
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
-h1:hover{
-    color: purple;
-}
-
-div{
+div {
     padding: 10px 10px 10px 10px;
     height: 25px;
-    width: 10px;
-
-    
 }
+
+
