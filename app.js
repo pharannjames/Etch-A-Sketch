@@ -1,5 +1,5 @@
 const reset = document.querySelector('#reset')
-generateGrid(4);
+changeGridSize();
 
 function generateGrid(size) {
     const container = document.querySelector('#container')
@@ -9,25 +9,37 @@ function generateGrid(size) {
     let gridSize = size * size;
     for (let i = 0; i < gridSize; i++) {
         let myDivs = document.createElement("div");
-        myDivs.innerHTML = i;
         myDivs.style.border = 'thin solid blue'
+        myDivs.innerHTML = i;
         container.appendChild(myDivs);
         // adds event to change background of divs when moused over
         myDivs.addEventListener("mouseover", function () {
             myDivs.style.backgroundColor = 'green';
         });
-
-        // resets grid 
+        // resets grid when button is clicked
         reset.addEventListener('click', function () {
             myDivs.style.backgroundColor = 'white';
-            // let gridSize = prompt('Please enter new grid size');
         })
 
     }
 
 }
 
-function changeGridSize(input) {
+function newSize(input) {
     generateGrid(input);
+
 }
 
+function defaultGrid() {
+    generateGrid(16);
+}
+
+function changeGridSize(){
+    let input = prompt('how big would you like the new grid?')
+    if (input > 100 || input <16){
+        defaultGrid();
+        alert('grid cannot be less than 16 or greater than 100')
+    } else{
+        newSize(input)
+    }
+}
