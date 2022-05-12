@@ -1,5 +1,6 @@
 const reset = document.querySelector('#reset')
-changeGridSize();
+defaultGrid();
+
 
 function generateGrid(size) {
     const container = document.querySelector('#container')
@@ -25,6 +26,8 @@ function generateGrid(size) {
 
 }
 
+
+//refresh 
 function newSize(input) {
     generateGrid(input);
 
