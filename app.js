@@ -26,6 +26,7 @@ function generateGrid(size) {
 
 }
 
+//test
 
 //refresh 
 function newSize(input) {
